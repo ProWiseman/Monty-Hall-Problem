@@ -2,7 +2,7 @@ import random
 import matplotlib.pyplot as plt
 from celluloid import Camera
 
-BIG_NUM = 1000000
+BIG_NUM = 100
 
 def init_behind_of_door():
     # 0은 염소 1은 자동차
@@ -52,10 +52,10 @@ if __name__ == '__main__':
         
         total_car += final_choice
 
-        #makeAnimation(total_car, i, fig, camera)
+        makeAnimation(total_car, i, fig, camera)
 
-    #animation = camera.animate(interval=5)
+    animation = camera.animate(interval=5)
 
-    #plt.show()
+    plt.show()
 
     print(total_car / BIG_NUM)
